@@ -1,0 +1,38 @@
+.container{
+  /* Set display to grid*/
+    display:grid;
+  /* Setup rows and columns */
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 600px 50px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd"
+                        "sd sd main main main main main main"
+                        "ft ft ft ft ft ft ft ft ";
+    border: 2px solid cornsilk
+}
+.box{
+    border:1px solid rgb(191, 225, 238);
+    background: #9aaab4;
+}
+.header{
+    /* row start/column start/ row end/ column end */
+    grid-area: hd;
+}
+.footer{
+    grid-area: ft;
+}
+.sidebar{
+    grid-area: sd;
+}
+.content{
+    grid-area: main;
+    background-image: url('../image/AstonMart.jpg');
+    background-size:110%;
+    background-position-y: bottom;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: #010101;
+    color: rgb(114, 143, 169)   ;
+}
+.img{
+    object-fit: cover;
+}
